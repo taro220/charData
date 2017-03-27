@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <table>
+      {% for each in player_list %}
+        <tr>
+          <td>{{ each.name }}</td>
+          <td>{{ each.gold }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <table>
+      {% for each in char_list %}
+        <tr>
+          <td>{{each.char_class}}</td>
+          <td>{{each.char_level}}</td>
+          <td>{{each.maxHealth}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+  </body>
+</html>
